@@ -38,5 +38,6 @@ intermediate
 .idea
 cache
 
-/vendor/
+vendor/
 node_modules
+blocks/build/
