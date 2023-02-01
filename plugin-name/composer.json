@@ -1,0 +1,11 @@
+{
+    "name": "75th/wppb",
+    "description": "Fork of the WordPress Plugin Boilerplatee",
+    "authors": [
+        {
+            "name": "Lanny Heidbreder",
+            "email": "lanny.heidbreder@mediacurrent.com"
+        }
+    ],
+    "require": {}
+}

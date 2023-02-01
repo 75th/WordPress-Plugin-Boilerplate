@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "wppb/example-block",
+	"version": "1.0.0",
+	"title": "WPPB Example Block",
+	"category": "design",
+	"icon": "slides",
+	"description": "Scaffolding for a custom Gutenberg block.",
+	"keywords": ["example", "test", "testing", "boilerplate"],
+	"attributes": {
+		"columns": {
+			"type": "integer",
+			"enum": [1, 2, 3, 4, 5, 6],
+			"default": 3
+		}
+	},
+	"textdomain": "75th/wppb",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"viewScript": "file:./view.js",
+	"style": "file:./style-index.css"
+}
