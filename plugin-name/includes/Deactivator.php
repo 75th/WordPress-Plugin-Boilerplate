@@ -10,6 +10,8 @@
  * @subpackage Plugin_Name/includes
  */
 
+namespace PluginName;
+
 /**
  * Fired during plugin deactivation.
  *
@@ -20,7 +22,7 @@
  * @subpackage Plugin_Name/includes
  * @author     Your Name <email@example.com>
  */
-class Plugin_Name_Deactivator {
+class Deactivator {
 
 	/**
 	 * Short Description. (use period)
