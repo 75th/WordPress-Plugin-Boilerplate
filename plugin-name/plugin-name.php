@@ -32,6 +32,10 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
+if ( file_exists( dirname( __FILE__ ) ) . '/vendor/autoload.php' ) {
+	require_once dirname( __FILE__ ) . '/vendor/autoload.php';
+}
+
 /**
  * Currently plugin version.
  * Start at version 1.0.0 and use SemVer - https://semver.org
@@ -44,7 +48,6 @@ define( 'PLUGIN_NAME_VERSION', '1.0.0' );
  * This action is documented in includes/class-plugin-name-activator.php
  */
 function activate_plugin_name() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/Activator.php';
 	Activator::activate();
 }
 
@@ -53,18 +56,11 @@ function activate_plugin_name() {
  * This action is documented in includes/class-plugin-name-deactivator.php
  */
 function deactivate_plugin_name() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/Deactivator.php';
 	Deactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_plugin_name' );
-register_deactivation_hook( __FILE__, 'deactivate_plugin_name' );
-
-/**
- * The core plugin class that is used to define internationalization,
- * admin-specific hooks, and public-facing site hooks.
- */
-require plugin_dir_path( __FILE__ ) . 'includes/Plugin.php';
+register_activation_hook( __FILE__, 'PluginName\activate_plugin_name' );
+register_deactivation_hook( __FILE__, 'PluginName\deactivate_plugin_name' );
 
 /**
  * Begins execution of the plugin.

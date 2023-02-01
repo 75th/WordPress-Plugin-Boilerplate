@@ -10,6 +10,8 @@
  * @subpackage Plugin_Name/public
  */
 
+namespace PluginName;
+
 /**
  * The public-facing functionality of the plugin.
  *
@@ -20,7 +22,7 @@
  * @subpackage Plugin_Name/public
  * @author     Your Name <email@example.com>
  */
-class Plugin_Name_Public {
+class WordPressPublic {
 
 	/**
 	 * The ID of this plugin.
