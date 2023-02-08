@@ -7,7 +7,7 @@ const ALLOWED_BLOCKS = [ 'umw/horizontal-scroller-column' ];
 
 export default function Edit(props) {
 	const blockProps = useBlockProps({
-		className: 'umw-horizontal-scroller umw-custom-block'
+		className: 'plugin-name-horizontal-scroller plugin-name-custom-block'
 	});
 
 	return (

@@ -42,6 +42,9 @@ if ( file_exists( dirname( __FILE__ ) ) . '/vendor/autoload.php' ) {
  * Rename this for your plugin and update it as you release new versions.
  */
 define( 'PLUGIN_NAME_VERSION', '1.0.0' );
+define( 'PLUGIN_NAME_ROOT', plugin_dir_path( __FILE__ ) );
+define( 'PLUGIN_NAME_WEB_ROOT', plugin_dir_url( __FILE__ ) );
+define( 'PLUGIN_NAME_BLOCK_NAMESPACE', 'plugin-name' );
 
 /**
  * The code that runs during plugin activation.

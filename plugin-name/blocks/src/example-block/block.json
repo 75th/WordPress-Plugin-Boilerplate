@@ -1,9 +1,9 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
-	"name": "wppb/example-block",
+	"name": "plugin-name/example-block",
 	"version": "1.0.0",
-	"title": "WPPB Example Block",
+	"title": "Plugin Name Example Block",
 	"category": "design",
 	"icon": "slides",
 	"description": "Scaffolding for a custom Gutenberg block.",
